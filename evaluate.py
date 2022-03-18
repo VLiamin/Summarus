@@ -27,7 +27,6 @@ def punct_detokenize(text):
 
 
 def postprocess(ref, hyp, language, is_multiple_ref=False, detokenize_after=False, tokenize_after=False, lower=False):
-    print(1)
     if is_multiple_ref:
         reference_sents = ref.split(" s_s ")
         decoded_sents = hyp.split("s_s")
